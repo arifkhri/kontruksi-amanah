@@ -1,0 +1,121 @@
+.rotating-text {
+  @apply hidden;
+
+  @media (min-width: 1024px) {
+    @apply relative inline;
+
+    &::before {
+      content: "Tokomu";
+      display: inline;
+      color: transparent;
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+}
+
+.rotating-text > div {
+  @apply bg-gradient-to-r from-volt-500 to-volt-600;
+  @apply bg-clip-text text-transparent;
+
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  animation: text-rotating 7.2s linear infinite 0s;
+}
+
+@keyframes text-rotating {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  3% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  31% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  34% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.rotating-text-mobile {
+  &::before {
+    content: "Tokomu";
+    display: inline;
+    color: transparent;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  @media (min-width: 1024px) {
+    @apply hidden;
+  }
+
+  div {
+    @apply bg-gradient-to-r from-volt-500 to-volt-600;
+    @apply bg-clip-text text-transparent;
+
+    left: 50%;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    animation: text-rotating-mobile 7.2s linear infinite 0s;
+  }
+}
+
+@keyframes text-rotating-mobile {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -30px);
+  }
+
+  3% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+
+  31% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+
+  34% {
+    opacity: 0;
+    transform: translate(-50%, 30px);
+  }
+
+  100% {
+    transform: translate(-50%, -30px);
+  }
+}
+
+.rotating-text > div:nth-child(2) {
+  animation-delay: 2.4s;
+}
+
+.rotating-text > div:nth-child(3) {
+  animation-delay: 4.8s;
+}
+
+.rotating-text-mobile > div:nth-child(2) {
+  animation-delay: 2.4s;
+}
+
+.rotating-text-mobile > div:nth-child(3) {
+  animation-delay: 4.8s;
+}

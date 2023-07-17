@@ -1,0 +1,53 @@
+{
+  "name": "typescript-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "run-s style-lint lint clean serve-dev",
+    "serve-dev": "cross-env PORT=${NEXT_PORT:-5000} next dev",
+    "build": "run-s clean && cross-env next build",
+    "start": "next start",
+    "clean": "rimraf .next out",
+    "lint": "next lint --fix",
+    "style-lint": "stylelint \"**/*.scss\" --fix",
+    "analyze": "run-s lint build-stats",
+    "build-stats": "cross-env NODE_ENV=production ANALYZE=true npm run build",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.1",
+    "@next/bundle-analyzer": "13.0.5",
+    "@next/font": "13.0.5",
+    "clsx": "^1.2.1",
+    "graphql": "^16.6.0",
+    "lottie-react": "^2.3.1",
+    "next": "13.0.5",
+    "next-compose-plugins": "^2.2.1",
+    "rc-select": "^14.1.14",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-google-recaptcha": "^2.1.0"
+  },
+  "devDependencies": {
+    "@clodeo/eslint-config": "^1.2.5",
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "@types/react-google-recaptcha": "^2.1.5",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "autoprefixer": "^10.4.13",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.27.0",
+    "eslint-config-next": "13.0.4",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.10",
+    "husky": "^8.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.19",
+    "sass": "^1.56.1",
+    "stylelint": "^14.15.0",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "tailwindcss": "^3.2.4",
+    "typescript": "4.9.3"
+  }
+}

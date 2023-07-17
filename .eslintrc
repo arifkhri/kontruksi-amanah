@@ -1,0 +1,7 @@
+{
+  "extends": ["@clodeo"],
+  "globals": {
+    "window": true,
+    "module": true
+  }
+}

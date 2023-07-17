@@ -1,0 +1,90 @@
+.btn {
+  @apply hover:outline-none font-bold disabled:opacity-70 disabled:cursor-not-allowed text-center;
+
+  &.xs {
+    @apply py-1 px-2 min-w-[90px] text-xs font-medium;
+  }
+
+  &.sm {
+    @apply py-2 px-3 min-w-[99px] text-sm;
+  }
+
+  &.md {
+    @apply py-3 px-4 min-w-[112px] text-base;
+  }
+
+  &.lg {
+    @apply py-4 px-5 min-w-[121px] text-lg;
+  }
+
+  &.xl {
+    @apply py-5 px-6 min-w-[147px] text-xl;
+  }
+
+  &.primary {
+    @apply bg-[#E3FF66] text-[#2A3300]
+      active:bg-[#A6CC00] active:text-[#2A3300];
+
+    &:hover {
+      @apply border-volt-700 disabled:border-0;
+
+      box-shadow: 0 4px 0 0.25px #769100;
+      transform: translateY(-4px);
+    }
+
+    &:active {
+      box-shadow: 0 0 0 0;
+      transform: translateY(0);
+    }
+  }
+
+  &.secondary {
+    @apply bg-[#D2DEFB] text-ultramarine-400 ring-[#A5BEF7]
+      disabled:bg-[#E7EBEF] disabled:text-[#A1ADBE];
+
+    &:not(:disabled) {
+      @apply hover:ring
+        hover:bg-[#E8EFFD] hover:text-[#1E40EB]
+        active:ring-transparent active:bg-[#A5BEF7] active:text-[#1E40EB];
+    }
+  }
+
+  &.tertiary {
+    @apply bg-ultramarine-500 text-cadet-100 border-ultramarine-400 border-[1px]
+      disabled:border-0 disabled:text-ultramarine-200;
+
+    &:hover {
+      @apply disabled:border-0;
+
+      transform: translateY(-4px);
+    }
+
+    &:active {
+      box-shadow: 0 0 0 0;
+      transform: translateY(0);
+    }
+  }
+
+  &.outline {
+    @apply text-volt-500 border-volt-500 border-[1px];
+
+    &:hover {
+      @apply disabled:border-0;
+
+      transform: translateY(-4px);
+    }
+
+    &:active {
+      box-shadow: 0 0 0 0;
+      transform: translateY(0);
+    }
+  }
+
+  &.circle {
+    @apply rounded-full;
+  }
+
+  &.square {
+    @apply rounded-xl;
+  }
+}

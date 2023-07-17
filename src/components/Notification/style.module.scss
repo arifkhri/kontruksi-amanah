@@ -1,0 +1,30 @@
+.notification {
+  @apply fixed top-2 right-2 z-10;
+
+  .notification-container {
+    @apply flex flex-col gap-2 transition-all duration-500 ease-in-out;
+
+    .notification-item {
+      @apply w-[290px] lg:w-[307px] px-3 py-4 flex gap-[16px] bg-white transform-gpu translate-y-0 hover:translate-y-1
+        transition-all duration-500 ease-in-out
+        shadow-[0px_6px_12px_-6px_rgba(0,34,74,0.12),0px_6px_24px_-4px_rgba(0,34,74,0.08)]
+        rounded-xl;
+
+      .notification-item-container {
+        @apply flex flex-col gap-[7px];
+
+        .notification-item-title {
+          @apply text-[#101315] font-bold text-xs lg:text-sm;
+        }
+
+        .notification-item-content {
+          @apply text-[#414B54] text-xs lg:text-sm;
+        }
+      }
+
+      .notification-item-x {
+        @apply cursor-pointer;
+      }
+    }
+  }
+}

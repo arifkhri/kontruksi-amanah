@@ -1,0 +1,71 @@
+include:
+  - project: platform/infrastructure/gitlab-ci
+    file: /components/gcr-push.yml
+  - project: platform/infrastructure/gitlab-ci
+    file: /components/argocd-sync.yml
+
+stages:
+  - docker-push
+  - sync-cd
+
+###############
+### STAGING ###
+###############
+
+staging-docker-push:
+  stage: docker-push
+  tags:
+    - docker-in-docker
+  extends:
+    - .component-gcr-push-img
+  variables:
+    PROJECT_GROUP: clodeo
+    ENV_BUILD: staging
+    DOCKER_ARG0: development # pass custom arg to mark the nextjs would run on development NODE_ENV
+    DOCKERFILE_PATH: Dockerfile
+    DOCKER_BUILD_PATH: .
+  before_script:
+    - chmod +x ./docker-cmd.sh
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+
+staging-argocd-sync:
+  stage: sync-cd
+  variables:
+    ARGOCD_APP: cld-stg-commercial-fe-webcom
+    HELM_APP_NAMES: main
+  extends:
+    - .component-argocd-sync
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+
+##################
+### PRODUCTION ###
+##################
+
+production-docker-push:
+  stage: docker-push
+  tags:
+    - docker-in-docker
+  extends:
+    - .component-gcr-push-img
+  variables:
+    PROJECT_GROUP: clodeo
+    ENV_BUILD: production
+    DOCKER_ARG0: production # pass custom arg to mark the nextjs would run on development NODE_ENV
+    DOCKERFILE_PATH: Dockerfile
+    DOCKER_BUILD_PATH: .
+  before_script:
+    - chmod +x ./docker-cmd.sh
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v.*$/'
+
+production-argocd-sync:
+  stage: sync-cd
+  variables:
+    ARGOCD_APP: cld-prod-commercial-fe-webcom
+    HELM_APP_NAMES: main
+  extends:
+    - .component-argocd-sync
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v.*$/'

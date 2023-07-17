@@ -1,0 +1,21 @@
+.form-group {
+  @apply w-full flex flex-col gap-[8px] text-[#414B54];
+
+  label {
+    @apply text-xs xl:text-sm text-cadet-500 pl-3;
+
+    &.required {
+      @apply after:content-["*"] after:ml-0.5 after:text-[#EF6262];
+    }
+  }
+
+  .error {
+    @apply flex gap-[5px] text-[#D93535] text-sm items-center;
+  }
+
+  input,
+  input::placeholder,
+  [class="rc-select-selection-placeholder"] {
+    @apply text-[14px];
+  }
+}

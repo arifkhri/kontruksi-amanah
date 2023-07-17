@@ -1,0 +1,39 @@
+.input-wrapper {
+  @apply relative rounded-md;
+
+  .addon-before {
+    @apply border-[0.5px] border-[#C4CBD1]
+      rounded-l-md pointer-events-none absolute
+      inset-y-0 left-0 flex items-center py-[9px] px-2 text-sm;
+
+    span {
+      @apply text-[#31383F];
+    }
+  }
+
+  .addon-after {
+    @apply border-[0.5px] border-[#C4CBD1]
+      rounded-r-md pointer-events-none absolute
+      inset-y-0 right-0 flex items-center p-3 text-sm;
+
+    span {
+      @apply text-[#31383F];
+    }
+  }
+
+  input {
+    @apply outline-0 p-2 block bg-ultramarine-50 font-semibold text-xs xl:text-sm
+      w-full rounded-md border-[0.5px] border-[#C4CBD1] text-[#101315]
+      focus:border-ultramarine-300 focus:ring-ultramarine-300
+      hover:shadow-[0px_2px_2px_rgba(0,97,194,0.1),0px_0px_0px_2px_rgba(53,84,236,1)]
+      placeholder:font-normal placeholder:text-[#62717D] px-[12px] py-[8px];
+
+    &.input-addon-before {
+      @apply pl-[52px];
+    }
+
+    &.input-addon-after {
+      @apply pr-[52px];
+    }
+  }
+}

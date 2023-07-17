@@ -1,0 +1,41 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Box_Comp_1">
+<g id="Frame 2762">
+<rect id="Rectangle 2840" x="47.5641" y="17.9527" width="28.3247" height="34.8019" fill="url(#paint0_linear_3341_106383)" stroke="#1230C6" stroke-width="0.55"/>
+<rect id="Rectangle 2841" x="63.4938" y="17.9527" width="28.3247" height="34.8019" fill="#BCC6F9" stroke="#1230C6" stroke-width="0.55"/>
+<rect id="Rectangle 2842" x="74.1344" y="17.9527" width="7.88706" height="21.7747" fill="#BCC6F9" stroke="#1230C6" stroke-width="0.55"/>
+<rect id="Rectangle 2843" x="52.6461" y="17.9527" width="4.11397" height="21.7747" fill="#BCC6F9" stroke="#1230C6" stroke-width="0.55"/>
+</g>
+<g id="Frame 2761">
+<rect id="Rectangle 2851" x="29.5875" y="53.3043" width="28.3247" height="34.8019" fill="url(#paint1_linear_3341_106383)" stroke="#1230C6" stroke-width="0.55"/>
+<rect id="Rectangle 2852" x="57.0484" y="53.3043" width="42.1594" height="34.8019" fill="#BCC6F9" stroke="#1230C6" stroke-width="0.55"/>
+<rect id="Rectangle 2853" x="74.1852" y="53.3043" width="7.88706" height="21.7748" fill="#E8EFFD" stroke="#1230C6" stroke-width="0.55"/>
+<rect id="Rectangle 2854" x="34.6695" y="53.3043" width="4.11397" height="21.7748" fill="#BCC6F9" stroke="#1230C6" stroke-width="0.55"/>
+</g>
+<g id="Frame 2765">
+<path id="Rectangle 2852_2" d="M45.0186 88.1353L34.4006 81.4018L52.4129 14.0191L63.0309 20.7526L45.0186 88.1353Z" fill="#BCC6F9" stroke="#1230C6" stroke-width="0.55"/>
+<path id="Rectangle 2856" d="M48.6855 55.8872L42.1964 51.5756L44.9758 41.1782L51.4649 45.4899L50.0513 50.7778L48.6855 55.8872Z" fill="#E8EFFD" stroke="#1230C6" stroke-width="0.55"/>
+<path id="Rectangle 2854_2" d="M34.1065 81.2503L1.08475 81.2503L19.0988 13.861L52.1205 13.8611L34.1065 81.2503Z" fill="url(#paint2_linear_3341_106383)" stroke="#1230C6" stroke-width="0.55"/>
+<path id="Rectangle 2855" d="M42.0917 51.5022L8.91288 51.5023L11.6548 41.245L44.8336 41.2449L42.0917 51.5022Z" fill="#E8EFFD" stroke="#1230C6" stroke-width="0.55"/>
+<path id="Rectangle 2859" d="M11.5767 88.2998L1.5462 81.7584L34.34 81.7584L44.3705 88.2998L11.5767 88.2998Z" fill="url(#paint3_linear_3341_106383)" stroke="#1230C6" stroke-width="0.55"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_3341_106383" x1="64.9754" y1="15.3665" x2="53.9738" y2="60.1877" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1230C6"/>
+<stop offset="1" stop-color="#798DF3"/>
+</linearGradient>
+<linearGradient id="paint1_linear_3341_106383" x1="46.9989" y1="50.718" x2="35.9972" y2="95.5393" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1230C6"/>
+<stop offset="1" stop-color="#798DF3"/>
+</linearGradient>
+<linearGradient id="paint2_linear_3341_106383" x1="4.57874" y1="33.1052" x2="53.1069" y2="51.2083" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1230C6"/>
+<stop offset="1" stop-color="#798DF3"/>
+</linearGradient>
+<linearGradient id="paint3_linear_3341_106383" x1="25.5181" y1="81.0198" x2="25.2528" y2="90.545" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1230C6"/>
+<stop offset="1" stop-color="#798DF3"/>
+</linearGradient>
+</defs>
+</svg>

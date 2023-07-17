@@ -1,0 +1,6 @@
+.shipdeo-section-bg {
+  @apply rounded-[32px] lg:px-16 px-8 lg:py-14 py-8;
+
+  background-image: conic-gradient(from 159.92deg at 65.66% 43.88%, #0c2083 -20.63deg, #0c2083 58.12deg, #07134e 159.38deg, #07134e 256.87deg, #0c2083 339.37deg, #0c2083 418.13deg);
+  box-shadow: 0 14px 24px hsl(230deg 82% 11% / 42%);
+}
