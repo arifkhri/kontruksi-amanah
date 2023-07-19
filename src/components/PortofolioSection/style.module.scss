@@ -1,0 +1,29 @@
+.portofolio-bg {
+  background: #f0f5f4;
+}
+
+.portofolio-item {
+  border: 1px solid #dfe3e7;
+}
+
+.card-item {
+  position: relative;
+  object-fit: cover;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 300px;
+}
+
+.title {
+  @apply bg-white;
+
+  position: absolute;
+  opacity: 0.8;
+  width: 100%;
+  left: 0;
+  bottom: -8px;
+  height: 50px;
+  padding: 10px;
+}

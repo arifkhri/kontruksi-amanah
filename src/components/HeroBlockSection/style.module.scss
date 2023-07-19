@@ -15,7 +15,6 @@
 }
 
 .rotating-text > div {
-  @apply bg-gradient-to-r from-volt-500 to-volt-600;
   @apply bg-clip-text text-transparent;
 
   left: 0;
@@ -66,7 +65,6 @@
   }
 
   div {
-    @apply bg-gradient-to-r from-volt-500 to-volt-600;
     @apply bg-clip-text text-transparent;
 
     left: 50%;

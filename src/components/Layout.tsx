@@ -6,9 +6,8 @@ import useLocalData from '../hooks/useLocalData';
 import Header from './Header';
 import Footer from './Footer';
 import HeroBlockSection from './HeroBlockSection';
-import FeatureSection from './FeatureSection';
-import SolutionSection from './SolutionSection';
 import ServiceSection from './ServiceSection';
+import PortofolioSection from './PortofolioSection';
 import WhatsappSection from './WhatsappSection';
 
 function Layout() {
@@ -46,17 +45,17 @@ function Layout() {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <title>Kloola</title>
+        <title>Kontruksi Amanah</title>
       </Head>
       <Header />
+      
       <main className="pt-[150px]">
         <HeroBlockSection />
         <ServiceSection />
+        <PortofolioSection />
         <WhatsappSection />
       </main>
-      <div className="gradient-wrapper">
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }

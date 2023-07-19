@@ -1,5 +1,5 @@
 .header {
-  @apply fixed w-full z-10;
+  @apply fixed w-full z-10 bg-white;
 
   .btn-register {
     @apply pointer-events-none lg:pointer-events-auto
@@ -23,8 +23,6 @@
   }
 
   &.active {
-    @apply bg-ultramarine-700 bg-opacity-80;
-
     .navicon-mobile[data-icon="bar"] {
       @apply hidden;
     }

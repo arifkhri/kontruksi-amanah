@@ -2,7 +2,7 @@
   @apply w-full relative rounded-md overflow-hidden;
 
   :global(.rc-select-selector) {
-    @apply flex relative bg-ultramarine-50 text-xs xl:text-sm;
+    @apply flex relative text-xs xl:text-sm;
 
     :global(.rc-select-selection-search) {
       @apply w-full outline-0 block
@@ -45,7 +45,7 @@
         :global(.rc-select-selection-item) {
           position: unset;
 
-          @apply flex border border-ultramarine-100 bg-white rounded-xl p-2 gap-[4px] text-[#414B54] h-[24px] items-center m-[2px];
+          @apply flex border bg-white rounded-xl p-2 gap-[4px] text-[#414B54] h-[24px] items-center m-[2px];
 
           :global(.rc-select-selection-item-remove) {
             @apply text-[#4EADFF] font-bold;

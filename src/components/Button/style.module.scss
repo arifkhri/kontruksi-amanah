@@ -26,7 +26,7 @@
       active:bg-[#A6CC00] active:text-[#2A3300];
 
     &:hover {
-      @apply border-volt-700 disabled:border-0;
+      @apply disabled:border-0;
 
       box-shadow: 0 4px 0 0.25px #769100;
       transform: translateY(-4px);
@@ -39,7 +39,7 @@
   }
 
   &.secondary {
-    @apply bg-[#D2DEFB] text-ultramarine-400 ring-[#A5BEF7]
+    @apply bg-[#D2DEFB] ring-[#A5BEF7]
       disabled:bg-[#E7EBEF] disabled:text-[#A1ADBE];
 
     &:not(:disabled) {
@@ -50,8 +50,8 @@
   }
 
   &.tertiary {
-    @apply bg-ultramarine-500 text-cadet-100 border-ultramarine-400 border-[1px]
-      disabled:border-0 disabled:text-ultramarine-200;
+    @apply text-cadet-100 border-[1px]
+      disabled:border-0;
 
     &:hover {
       @apply disabled:border-0;
@@ -66,7 +66,7 @@
   }
 
   &.outline {
-    @apply text-volt-500 border-volt-500 border-[1px];
+    @apply text-orange-500 border-[1px] border-orange-500;
 
     &:hover {
       @apply disabled:border-0;

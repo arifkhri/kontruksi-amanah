@@ -21,18 +21,10 @@ export default function HeroBlockSection() {
   return (
     <section id="heroblock">
       <Container>
-        <div className="relative lg:mx-[150px] pointer-events-none">
-          <img aria-hidden="true" src="/images/dashline.svg" alt="" className="max-h-[4096px] absolute left-0 -z-20" />
-          <img aria-hidden="true" src="/images/dashline.svg" alt="" className="max-h-[4096px] lg:block hidden absolute left-[25%] -z-20" />
-          <img aria-hidden="true" src="/images/dashline.svg" alt="" className="max-h-[4096px] lg:block hidden absolute left-[50%] -z-20" />
-          <img aria-hidden="true" src="/images/dashline.svg" alt="" className="max-h-[4096px] lg:block hidden absolute left-[75%] -z-20" />
-          <img aria-hidden="true" src="/images/dashline.svg" alt="" className="max-h-[4096px] absolute right-0 -z-20" />
-        </div>
-
         <div className="flex-col items-center flex">
           <div className="mb-3 lg:px-40">
 
-            <h1 className="flex flex-wrap justify-center text-center text-ultramarine-50 lg:text-[64px] text-[42px]">
+            <h1 className="flex flex-wrap justify-center text-center lg:text-[64px] text-[42px]">
               <div className="mr-3">Kelola</div>
               <div className="lg:mr-3">semua</div>
               <div className={clsx('relative text-center', styles['rotating-text'])}>
@@ -46,12 +38,12 @@ export default function HeroBlockSection() {
                 <div>Orderanmu</div>
               </div>
             </h1>
-            <h1 className="text-center text-ultramarine-50 lg:text-[64px] text-[42px]">
+            <h1 className="text-center lg:text-[64px] text-[42px]">
               di Satu Tempat
             </h1>
           </div>
 
-          <p className="font-medium text-2xl leading-9 mb-6 text-ultramarine-100 text-center lg:px-[15rem]">
+          <p className="font-medium text-2xl leading-9 mb-6 text-center lg:px-[15rem]">
             Biarkan Kloola mengurus proses order, produk, stok, sampai ke laporan sehingga kamu bisa lebih fokus ke pengembangan bisnis.
           </p>
 

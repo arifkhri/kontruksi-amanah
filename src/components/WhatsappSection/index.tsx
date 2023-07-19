@@ -2,10 +2,11 @@ function WhatsappSection() {
 
   return (
     <section className="whatsapp">
-      <div className="fixed bottom-0.5 right-2.5">
-        <a href="//api.whatsapp.com/send?phone=6281214340802&text=Hallo Kloola, Saya membutuhkan bantuan." target="_blank" rel="noreferrer">
+      <div className="fixed bottom-10 right-5">
+        <a href="//api.whatsapp.com/send?phone=6281574156100&text=Assalamu'alaikum, Saya tertarik dengan layanannya bisa tanya-tanya lebih lanjut?" target="_blank" rel="noreferrer">
           <img
-            src="/images/whatsapp.svg"
+            width="70px"
+            src="/images/whatsapp.png"
             alt="whatsapp"
           />
         </a>

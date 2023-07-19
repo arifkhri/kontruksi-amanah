@@ -1,4 +1,4 @@
-# kloola-website
+# kontruksi-amanah-website
 a website landingpage (built with next, stylelint, eslint, typescript, husky, tailwindcss, sass)
 
 ##### Minimum Requirements

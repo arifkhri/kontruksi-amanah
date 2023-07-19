@@ -17,7 +17,7 @@ function Container(props: ContainerProps) {
         ? className
         : clsx([
           '[@media(min-width:1440px)]:max-w-[1440px]',
-          'mx-auto px-[30px] xl:px-[150px] lg:px-[100px] relative',
+          'mx-auto',
           className
         ])}
     >
